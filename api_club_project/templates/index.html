@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/index.css">
+    <title>Story Maker</title>
+</head>
+<body>
+    <h1>Story Maker</h1>
+    <p>Upload Images, we will make a story for you.</p>
+
+    <div class="upload-section">
+        <label for="imageUpload" class="upload-btn">Select Images</label>
+        <input type="file" id="imageUpload" accept="image/*" multiple>
+        <p class="hint">Supports JPG, PNG, GIF, and WebP.</p>
+    </div>
+    <div id="previewContainer" class="preview-container">
+        <!-- Previews will be added here dynamically with JavaScript -->
+    </div>
+
+    <div id="storyContainer" class="story-container hidden">
+        <div>
+            <input type="button" id="generateStory" value="Generate Story">
+        </div>
+        <textarea cols = 100 rows= 50 id="storyTextArea"> </textarea>
+    </div>
+</body>
+<script src="static/file_upload.js">
+</script>
+<script src="static/story_gen.js">
+</script>
+</html>
